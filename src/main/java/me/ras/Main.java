@@ -45,6 +45,7 @@ public class Main {
     };
 
     public static void main(String[] args) {
+        showPassedArgs(args);
         byte[][] m = CUSTOM_MATRIX_CUTTED_1;
         // print the matrix
         printMatrix(m);
@@ -52,6 +53,14 @@ public class Main {
         List<Integer> rowIndexesThatCover = findShortestCoverageOfBoolMatrixApproximate(m);
         // show results
         System.out.println(rowIndexesThatCover);
+    }
+
+    private static void showPassedArgs(String[] args) {
+        System.out.println("String[] args=[");
+        for (String arg : args) {
+            System.out.println("arg=" + arg);
+        }
+        System.out.println("]");
     }
 
     public static List<Integer> findShortestCoverageOfBoolMatrixApproximate(byte[][] matrixToResearch) {

@@ -1,3 +1,8 @@
+This project can be packaged into confident jar archive. (mvn package)
+Then runs with [java -jar LogicCombinatorialSolver-1.0-SNAPSHOT-jar-with-dependencies.jar arg1, arg2, arg3...]
+arg1, arg2, arg3 are parameters passed to main(Strin[] args) function.
+
+Algorithm desc
 Алгоритм начинает работу с выбора минимального столбца в матрице A1
 (если таких столбцов несколько, то можно взять, например, самый левый). 
 Среди строк матрицы , содержащих единицу в выбранном столбце, находится максимальная строка 
