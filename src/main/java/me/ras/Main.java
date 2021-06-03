@@ -32,8 +32,20 @@ public class Main {
             {0, 0, 0, 0}
     };
 
+    public static final byte[][] CUSTOM_MATRIX_CUTTED = new byte[][]{
+            {1, 0, 1},
+            {1, 0, 0},
+            {0, 0, 1}
+    };
+
+    public static final byte[][] CUSTOM_MATRIX_CUTTED_1 = new byte[][]{
+            {0, 0, 1},
+            {0, 1, 0},
+            {1, 0, 0}
+    };
+
     public static void main(String[] args) {
-        byte[][] m = EZ_MATRIX;
+        byte[][] m = CUSTOM_MATRIX_CUTTED_1;
         // print the matrix
         printMatrix(m);
         // research
